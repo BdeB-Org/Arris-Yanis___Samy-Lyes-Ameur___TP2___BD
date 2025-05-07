@@ -1,0 +1,92 @@
+create or replace package UTILISATEUR_tapi
+is
+
+type UTILISATEUR_tapi_rec is record (
+MOT_DE_PASSE  UTILISATEUR.MOT_DE_PASSE%type
+,DATE_CREATION  UTILISATEUR.DATE_CREATION%type
+,ID_USER  UTILISATEUR.ID_USER%type
+,EMAIL  UTILISATEUR.EMAIL%type
+,NOM  UTILISATEUR.NOM%type
+,PRENOM  UTILISATEUR.PRENOM%type
+);
+type UTILISATEUR_tapi_tab is table of UTILISATEUR_tapi_rec;
+
+-- insert
+procedure ins (
+p_MOT_DE_PASSE in UTILISATEUR.MOT_DE_PASSE%type
+,p_DATE_CREATION in UTILISATEUR.DATE_CREATION%type
+,p_ID_USER in UTILISATEUR.ID_USER%type
+,p_EMAIL in UTILISATEUR.EMAIL%type
+,p_NOM in UTILISATEUR.NOM%type
+,p_PRENOM in UTILISATEUR.PRENOM%type
+);
+-- update
+procedure upd (
+p_MOT_DE_PASSE in UTILISATEUR.MOT_DE_PASSE%type
+,p_DATE_CREATION in UTILISATEUR.DATE_CREATION%type
+,p_ID_USER in UTILISATEUR.ID_USER%type
+,p_EMAIL in UTILISATEUR.EMAIL%type
+,p_NOM in UTILISATEUR.NOM%type
+,p_PRENOM in UTILISATEUR.PRENOM%type
+);
+-- delete
+procedure del (
+p_ID_USER in UTILISATEUR.ID_USER%type
+);
+end UTILISATEUR_tapi;
+
+/
+create or replace package body UTILISATEUR_tapi
+is
+-- insert
+procedure ins (
+p_MOT_DE_PASSE in UTILISATEUR.MOT_DE_PASSE%type
+,p_DATE_CREATION in UTILISATEUR.DATE_CREATION%type
+,p_ID_USER in UTILISATEUR.ID_USER%type
+,p_EMAIL in UTILISATEUR.EMAIL%type
+,p_NOM in UTILISATEUR.NOM%type
+,p_PRENOM in UTILISATEUR.PRENOM%type
+) is
+begin
+insert into UTILISATEUR(
+MOT_DE_PASSE
+,DATE_CREATION
+,ID_USER
+,EMAIL
+,NOM
+,PRENOM
+) values (
+p_MOT_DE_PASSE
+,p_DATE_CREATION
+,p_ID_USER
+,p_EMAIL
+,p_NOM
+,p_PRENOM
+);end;
+-- update
+procedure upd (
+p_MOT_DE_PASSE in UTILISATEUR.MOT_DE_PASSE%type
+,p_DATE_CREATION in UTILISATEUR.DATE_CREATION%type
+,p_ID_USER in UTILISATEUR.ID_USER%type
+,p_EMAIL in UTILISATEUR.EMAIL%type
+,p_NOM in UTILISATEUR.NOM%type
+,p_PRENOM in UTILISATEUR.PRENOM%type
+) is
+begin
+update UTILISATEUR set
+MOT_DE_PASSE = p_MOT_DE_PASSE
+,DATE_CREATION = p_DATE_CREATION
+,EMAIL = p_EMAIL
+,NOM = p_NOM
+,PRENOM = p_PRENOM
+where ID_USER = p_ID_USER;
+end;
+-- del
+procedure del (
+p_ID_USER in UTILISATEUR.ID_USER%type
+) is
+begin
+delete from UTILISATEUR
+where ID_USER = p_ID_USER;
+end;
+end UTILISATEUR_tapi;

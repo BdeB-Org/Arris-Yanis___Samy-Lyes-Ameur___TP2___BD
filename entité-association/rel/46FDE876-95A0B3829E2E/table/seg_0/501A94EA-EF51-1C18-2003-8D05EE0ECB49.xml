@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="501A94EA-EF51-1C18-2003-8D05EE0ECB49" name="utilisateur">
+<createdBy>Lyes lyes</createdBy>
+<createdTime>2025-05-06 04:50:49 UTC</createdTime>
+<generatorID>5B3243E4-FB55-BF10-2F2F-6B4DB3D5C4F3</generatorID>
+<ownerDesignName>entité-association</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_user" id="9AEE2EE0-C8D7-CC3C-35E5-65367382844F">
+<createdBy>Lyes lyes</createdBy>
+<createdTime>2025-05-06 04:50:49 UTC</createdTime>
+<generatorID>60D7B017-048C-A323-A2A8-6009F988012D</generatorID>
+<ownerDesignName>entité-association</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nom" id="32ACEB8C-025D-0048-7962-9F63782D0AB3">
+<createdBy>Lyes lyes</createdBy>
+<createdTime>2025-05-06 04:50:49 UTC</createdTime>
+<generatorID>E6BCD362-FEB8-ADF5-752B-D8058526FE5F</generatorID>
+<ownerDesignName>entité-association</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prenom" id="1F320777-D032-4EA0-5D8C-5EE9ABB5F4F9">
+<createdBy>Lyes lyes</createdBy>
+<createdTime>2025-05-06 04:50:49 UTC</createdTime>
+<generatorID>069AB10C-E20E-5FC0-2DA0-D2EBD84493E8</generatorID>
+<ownerDesignName>entité-association</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="A58AB17E-B501-752E-F351-5056A14F86E1">
+<createdBy>Lyes lyes</createdBy>
+<createdTime>2025-05-06 04:50:49 UTC</createdTime>
+<generatorID>A3F96617-C4C9-69B5-DED0-DAA1B94E3E8F</generatorID>
+<ownerDesignName>entité-association</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="mot_de_passe" id="48AC8515-D366-37F1-22DF-0A1A839D7FEF">
+<createdBy>Lyes lyes</createdBy>
+<createdTime>2025-05-06 04:50:49 UTC</createdTime>
+<generatorID>8E7F7CBB-E3D4-F679-0656-7233F5C6B8C3</generatorID>
+<ownerDesignName>entité-association</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_creation" id="B87B2667-4F04-6F01-7452-AD56DF2E6D86">
+<createdBy>Lyes lyes</createdBy>
+<createdTime>2025-05-06 04:50:49 UTC</createdTime>
+<generatorID>8CBE04EB-F509-0AEA-A7AC-6BEF7D6C0AC0</generatorID>
+<ownerDesignName>entité-association</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B0EF33E2-BDD2-11B6-2C98-B61C2ED81841" name="utilisateur_PK">
+<createdBy>Lyes lyes</createdBy>
+<createdTime>2025-05-06 04:50:49 UTC</createdTime>
+<generatorID>D60E1E96-0452-B5CA-4A99-4E2BD4017C99</generatorID>
+<ownerDesignName>entité-association</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9AEE2EE0-C8D7-CC3C-35E5-65367382844F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

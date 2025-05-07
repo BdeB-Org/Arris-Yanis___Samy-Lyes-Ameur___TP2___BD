@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="utilisateur_commentaire" directorySegmentName="seg_0" id="51B4769D-8CE7-8E89-FBE0-D746915F8E2E">
+<createdBy>Lyes lyes</createdBy>
+<createdTime>2025-05-06 04:10:03 UTC</createdTime>
+<ownerDesignName>entité-association</ownerDesignName>
+<engineerTo>
+<item key="46FDE876-F5EE-E0A2-C59D-95A0B3829E2E" value="true"/>
+</engineerTo>
+<sourcePk>D60E1E96-0452-B5CA-4A99-4E2BD4017C99</sourcePk>
+<targetPk>0894625A-2272-B5C2-AC17-0A54EBD18DC5</targetPk>
+<identifying>false</identifying>
+<nameOnSource>poste</nameOnSource>
+<nameOnTarget>est posté par</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>5B3243E4-FB55-BF10-2F2F-6B4DB3D5C4F3</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>E954179F-20D7-A76F-6DB1-820E6C0DA5DA</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

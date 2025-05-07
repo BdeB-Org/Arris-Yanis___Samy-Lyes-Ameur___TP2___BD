@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="entité-association" id="FE81A450-5AD7-6625-7B03-0185C147E117" version="3.5">
+<createdBy>Lyes lyes</createdBy>
+<createdTime>2025-05-06 02:30:21 UTC</createdTime>
+<ownerDesignName>entité-association</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>FE81A450-5AD7-6625-7B03-0185C147E117</designId>
+</OSDM_Design>

@@ -1,0 +1,100 @@
+create or replace package ARTICLE_tapi
+is
+
+type ARTICLE_tapi_rec is record (
+ID_ARTICLE  ARTICLE.ID_ARTICLE%type
+,TITRE  ARTICLE.TITRE%type
+,CATEGORIE_ID_CAT  ARTICLE.CATEGORIE_ID_CAT%type
+,INTRO  ARTICLE.INTRO%type
+,CONTENU  ARTICLE.CONTENU%type
+,DATE_PUB  ARTICLE.DATE_PUB%type
+,IMAGE_URL  ARTICLE.IMAGE_URL%type
+);
+type ARTICLE_tapi_tab is table of ARTICLE_tapi_rec;
+
+-- insert
+procedure ins (
+p_ID_ARTICLE in ARTICLE.ID_ARTICLE%type
+,p_TITRE in ARTICLE.TITRE%type
+,p_CATEGORIE_ID_CAT in ARTICLE.CATEGORIE_ID_CAT%type
+,p_INTRO in ARTICLE.INTRO%type
+,p_CONTENU in ARTICLE.CONTENU%type
+,p_DATE_PUB in ARTICLE.DATE_PUB%type
+,p_IMAGE_URL in ARTICLE.IMAGE_URL%type
+);
+-- update
+procedure upd (
+p_ID_ARTICLE in ARTICLE.ID_ARTICLE%type
+,p_TITRE in ARTICLE.TITRE%type
+,p_CATEGORIE_ID_CAT in ARTICLE.CATEGORIE_ID_CAT%type
+,p_INTRO in ARTICLE.INTRO%type
+,p_CONTENU in ARTICLE.CONTENU%type
+,p_DATE_PUB in ARTICLE.DATE_PUB%type
+,p_IMAGE_URL in ARTICLE.IMAGE_URL%type
+);
+-- delete
+procedure del (
+p_ID_ARTICLE in ARTICLE.ID_ARTICLE%type
+);
+end ARTICLE_tapi;
+
+/
+create or replace package body ARTICLE_tapi
+is
+-- insert
+procedure ins (
+p_ID_ARTICLE in ARTICLE.ID_ARTICLE%type
+,p_TITRE in ARTICLE.TITRE%type
+,p_CATEGORIE_ID_CAT in ARTICLE.CATEGORIE_ID_CAT%type
+,p_INTRO in ARTICLE.INTRO%type
+,p_CONTENU in ARTICLE.CONTENU%type
+,p_DATE_PUB in ARTICLE.DATE_PUB%type
+,p_IMAGE_URL in ARTICLE.IMAGE_URL%type
+) is
+begin
+insert into ARTICLE(
+ID_ARTICLE
+,TITRE
+,CATEGORIE_ID_CAT
+,INTRO
+,CONTENU
+,DATE_PUB
+,IMAGE_URL
+) values (
+p_ID_ARTICLE
+,p_TITRE
+,p_CATEGORIE_ID_CAT
+,p_INTRO
+,p_CONTENU
+,p_DATE_PUB
+,p_IMAGE_URL
+);end;
+-- update
+procedure upd (
+p_ID_ARTICLE in ARTICLE.ID_ARTICLE%type
+,p_TITRE in ARTICLE.TITRE%type
+,p_CATEGORIE_ID_CAT in ARTICLE.CATEGORIE_ID_CAT%type
+,p_INTRO in ARTICLE.INTRO%type
+,p_CONTENU in ARTICLE.CONTENU%type
+,p_DATE_PUB in ARTICLE.DATE_PUB%type
+,p_IMAGE_URL in ARTICLE.IMAGE_URL%type
+) is
+begin
+update ARTICLE set
+TITRE = p_TITRE
+,CATEGORIE_ID_CAT = p_CATEGORIE_ID_CAT
+,INTRO = p_INTRO
+,CONTENU = p_CONTENU
+,DATE_PUB = p_DATE_PUB
+,IMAGE_URL = p_IMAGE_URL
+where ID_ARTICLE = p_ID_ARTICLE;
+end;
+-- del
+procedure del (
+p_ID_ARTICLE in ARTICLE.ID_ARTICLE%type
+) is
+begin
+delete from ARTICLE
+where ID_ARTICLE = p_ID_ARTICLE;
+end;
+end ARTICLE_tapi;

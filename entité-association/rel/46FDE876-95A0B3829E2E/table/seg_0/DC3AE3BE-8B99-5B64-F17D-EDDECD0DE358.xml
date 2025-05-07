@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DC3AE3BE-8B99-5B64-F17D-EDDECD0DE358" name="commentaire">
+<createdBy>Lyes lyes</createdBy>
+<createdTime>2025-05-06 04:50:49 UTC</createdTime>
+<generatorID>E954179F-20D7-A76F-6DB1-820E6C0DA5DA</generatorID>
+<ownerDesignName>entité-association</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_com" id="FACB3F7D-45ED-0F1D-C7EB-267E5F1229B0">
+<createdBy>Lyes lyes</createdBy>
+<createdTime>2025-05-06 04:50:49 UTC</createdTime>
+<generatorID>0389410F-4F07-443D-4673-642CC336E966</generatorID>
+<ownerDesignName>entité-association</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="texte" id="ED493CEE-293A-C837-BA94-FEAF9E66E2EC">
+<createdBy>Lyes lyes</createdBy>
+<createdTime>2025-05-06 04:50:49 UTC</createdTime>
+<generatorID>7C20EBF9-E6DD-08F8-4784-7185F121B842</generatorID>
+<ownerDesignName>entité-association</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_com" id="0A503039-C318-35A9-7C56-6AE22454C379">
+<createdBy>Lyes lyes</createdBy>
+<createdTime>2025-05-06 04:50:49 UTC</createdTime>
+<generatorID>67E4DFD5-4F3B-AF95-B583-D95891E8473A</generatorID>
+<ownerDesignName>entité-association</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="article_id_article" id="5AB53F15-9978-EBF7-858F-627E483DA947">
+<createdBy>Lyes lyes</createdBy>
+<createdTime>2025-05-06 04:50:49 UTC</createdTime>
+<generatorID>D9383E1B-3C05-02AA-A6EE-E0B4FDA0B527</generatorID>
+<ownerDesignName>entité-association</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="86EC6D67-65FC-EB44-14CB-7ECFB9F157E0" referredColumn="ED761B69-A4D3-0837-AE89-3108236B7CE2"/>
+</associations>
+</Column>
+<Column name="utilisateur_id_user" id="B00D6A6C-500C-D340-CC47-7F753BE10ED7">
+<createdBy>Lyes lyes</createdBy>
+<createdTime>2025-05-06 04:50:49 UTC</createdTime>
+<generatorID>0EBC9FAA-4D3E-CCA7-1F48-BF691B3A8A03</generatorID>
+<ownerDesignName>entité-association</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2379114F-D866-D6EA-C1B8-09A7026F38E2" referredColumn="9AEE2EE0-C8D7-CC3C-35E5-65367382844F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AC0B5C2C-543F-8AF4-1B57-64FAC6525860" name="commentaire_PK">
+<createdBy>Lyes lyes</createdBy>
+<createdTime>2025-05-06 04:50:49 UTC</createdTime>
+<generatorID>0894625A-2272-B5C2-AC17-0A54EBD18DC5</generatorID>
+<ownerDesignName>entité-association</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FACB3F7D-45ED-0F1D-C7EB-267E5F1229B0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="447464BC-9940-0272-E3F4-F91DDC0FF4E9" name="commentaire_article_FK">
+<createdBy>Lyes lyes</createdBy>
+<createdTime>2025-05-06 04:50:49 UTC</createdTime>
+<generatorID>C7CB35C9-FCF5-1389-D0D0-9A45458A6217</generatorID>
+<ownerDesignName>entité-association</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5AB53F15-9978-EBF7-858F-627E483DA947"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C1457A4D-02C3-BFF0-C9C9-1E1F2B8C4501" name="commentaire_utilisateur_FK">
+<createdBy>Lyes lyes</createdBy>
+<createdTime>2025-05-06 04:50:49 UTC</createdTime>
+<generatorID>51B4769D-8CE7-8E89-FBE0-D746915F8E2E</generatorID>
+<ownerDesignName>entité-association</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B00D6A6C-500C-D340-CC47-7F753BE10ED7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

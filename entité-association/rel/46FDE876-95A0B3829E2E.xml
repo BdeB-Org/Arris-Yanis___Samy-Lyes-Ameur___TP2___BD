@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_1" id="46FDE876-F5EE-E0A2-C59D-95A0B3829E2E" mainViewID="4F66FABF-696D-2E42-F0A1-DBEF9E8C30E1">
+<createdBy>Lyes lyes</createdBy>
+<createdTime>2025-05-06 02:31:43 UTC</createdTime>
+<ownerDesignName>entité-association</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>32076570-2523-435C-2E92-BF29817DFF70</selectedRDBMSSite>
+</relationalModel>

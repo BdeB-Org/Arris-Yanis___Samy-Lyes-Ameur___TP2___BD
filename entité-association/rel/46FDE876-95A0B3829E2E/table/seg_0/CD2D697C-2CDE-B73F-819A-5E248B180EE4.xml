@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CD2D697C-2CDE-B73F-819A-5E248B180EE4" name="categorie">
+<createdBy>Lyes lyes</createdBy>
+<createdTime>2025-05-06 04:50:49 UTC</createdTime>
+<generatorID>BE67944D-8DAA-A05A-052A-DDFCF1969D81</generatorID>
+<ownerDesignName>entité-association</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_cat" id="A86A79E1-E023-A2B5-D34F-E7C32588E146">
+<createdBy>Lyes lyes</createdBy>
+<createdTime>2025-05-06 04:50:49 UTC</createdTime>
+<generatorID>B584A303-8D34-399B-BB47-34985B2ED588</generatorID>
+<ownerDesignName>entité-association</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nom" id="F4AF7620-E076-8B51-17BD-C92C0BDCC817">
+<createdBy>Lyes lyes</createdBy>
+<createdTime>2025-05-06 04:50:49 UTC</createdTime>
+<generatorID>25D191A8-770D-130F-588B-891404BDEC6E</generatorID>
+<ownerDesignName>entité-association</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="D16643A5-CA40-42AC-58BB-D59BDE6FF7FC">
+<createdBy>Lyes lyes</createdBy>
+<createdTime>2025-05-06 04:50:49 UTC</createdTime>
+<generatorID>ABE3F014-A8D6-B40F-8B73-E39C4E100A86</generatorID>
+<ownerDesignName>entité-association</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="87AF61C8-3C4F-5001-5134-0506BBCB80C2" name="categorie_PK">
+<createdBy>Lyes lyes</createdBy>
+<createdTime>2025-05-06 04:50:49 UTC</createdTime>
+<generatorID>5EF17E9D-EE19-75E2-AF4B-CD789E9FBC28</generatorID>
+<ownerDesignName>entité-association</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A86A79E1-E023-A2B5-D34F-E7C32588E146"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

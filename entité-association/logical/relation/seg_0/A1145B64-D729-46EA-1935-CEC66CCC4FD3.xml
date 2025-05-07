@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="categorie_article" directorySegmentName="seg_0" id="A1145B64-D729-46EA-1935-CEC66CCC4FD3">
+<createdBy>Lyes lyes</createdBy>
+<createdTime>2025-05-06 03:19:05 UTC</createdTime>
+<ownerDesignName>entité-association</ownerDesignName>
+<engineerTo>
+<item key="46FDE876-F5EE-E0A2-C59D-95A0B3829E2E" value="true"/>
+</engineerTo>
+<sourcePk>5EF17E9D-EE19-75E2-AF4B-CD789E9FBC28</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>regroupe</nameOnSource>
+<nameOnTarget>appartient à</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>BE67944D-8DAA-A05A-052A-DDFCF1969D81</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>76DE0BDB-6B7E-C179-523A-FB1F47AE4B5F</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,68 @@
+create or replace package CATEGORIE_tapi
+is
+
+type CATEGORIE_tapi_rec is record (
+DESCRIPTION  CATEGORIE.DESCRIPTION%type
+,NOM  CATEGORIE.NOM%type
+,ID_CAT  CATEGORIE.ID_CAT%type
+);
+type CATEGORIE_tapi_tab is table of CATEGORIE_tapi_rec;
+
+-- insert
+procedure ins (
+p_DESCRIPTION in CATEGORIE.DESCRIPTION%type default null 
+,p_NOM in CATEGORIE.NOM%type
+,p_ID_CAT in CATEGORIE.ID_CAT%type
+);
+-- update
+procedure upd (
+p_DESCRIPTION in CATEGORIE.DESCRIPTION%type default null 
+,p_NOM in CATEGORIE.NOM%type
+,p_ID_CAT in CATEGORIE.ID_CAT%type
+);
+-- delete
+procedure del (
+p_ID_CAT in CATEGORIE.ID_CAT%type
+);
+end CATEGORIE_tapi;
+
+/
+create or replace package body CATEGORIE_tapi
+is
+-- insert
+procedure ins (
+p_DESCRIPTION in CATEGORIE.DESCRIPTION%type default null 
+,p_NOM in CATEGORIE.NOM%type
+,p_ID_CAT in CATEGORIE.ID_CAT%type
+) is
+begin
+insert into CATEGORIE(
+DESCRIPTION
+,NOM
+,ID_CAT
+) values (
+p_DESCRIPTION
+,p_NOM
+,p_ID_CAT
+);end;
+-- update
+procedure upd (
+p_DESCRIPTION in CATEGORIE.DESCRIPTION%type default null 
+,p_NOM in CATEGORIE.NOM%type
+,p_ID_CAT in CATEGORIE.ID_CAT%type
+) is
+begin
+update CATEGORIE set
+DESCRIPTION = p_DESCRIPTION
+,NOM = p_NOM
+where ID_CAT = p_ID_CAT;
+end;
+-- del
+procedure del (
+p_ID_CAT in CATEGORIE.ID_CAT%type
+) is
+begin
+delete from CATEGORIE
+where ID_CAT = p_ID_CAT;
+end;
+end CATEGORIE_tapi;

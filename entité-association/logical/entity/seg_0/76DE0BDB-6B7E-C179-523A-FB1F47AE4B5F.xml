@@ -1,0 +1,124 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="76DE0BDB-6B7E-C179-523A-FB1F47AE4B5F" name="article">
+<createdBy>Lyes lyes</createdBy>
+<createdTime>2025-05-06 03:06:09 UTC</createdTime>
+<ownerDesignName>entité-association</ownerDesignName>
+<engineerTo>
+<item key="46FDE876-F5EE-E0A2-C59D-95A0B3829E2E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_article" id="3EED0746-A128-C22F-5B4B-391D369FC5E9">
+<createdBy>Lyes lyes</createdBy>
+<createdTime>2025-05-06 03:06:23 UTC</createdTime>
+<ownerDesignName>entité-association</ownerDesignName>
+<engineerTo>
+<item key="46FDE876-F5EE-E0A2-C59D-95A0B3829E2E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="titre" id="2E877D38-1988-7D62-E689-71B4497E623E">
+<createdBy>Lyes lyes</createdBy>
+<createdTime>2025-05-06 03:06:45 UTC</createdTime>
+<ownerDesignName>entité-association</ownerDesignName>
+<engineerTo>
+<item key="46FDE876-F5EE-E0A2-C59D-95A0B3829E2E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="intro" id="2120CFCE-EEBF-EE00-C334-5CC5E469FDC3">
+<createdBy>Lyes lyes</createdBy>
+<createdTime>2025-05-06 03:07:04 UTC</createdTime>
+<ownerDesignName>entité-association</ownerDesignName>
+<engineerTo>
+<item key="46FDE876-F5EE-E0A2-C59D-95A0B3829E2E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="contenu" id="477C481F-AB83-14CE-5E1E-ED782A9499ED">
+<createdBy>Lyes lyes</createdBy>
+<createdTime>2025-05-06 03:07:26 UTC</createdTime>
+<ownerDesignName>entité-association</ownerDesignName>
+<engineerTo>
+<item key="46FDE876-F5EE-E0A2-C59D-95A0B3829E2E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="image_url" id="7FDF1A03-E4FE-0F91-6D73-1A0934E15AE7">
+<createdBy>Lyes lyes</createdBy>
+<createdTime>2025-05-06 03:08:25 UTC</createdTime>
+<ownerDesignName>entité-association</ownerDesignName>
+<engineerTo>
+<item key="46FDE876-F5EE-E0A2-C59D-95A0B3829E2E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="date_pub" id="FB020CB8-E27B-79A4-90AC-0203028670FB">
+<createdBy>Lyes lyes</createdBy>
+<createdTime>2025-05-06 03:08:46 UTC</createdTime>
+<ownerDesignName>entité-association</ownerDesignName>
+<engineerTo>
+<item key="46FDE876-F5EE-E0A2-C59D-95A0B3829E2E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_cat" id="6E45A287-D072-2C26-1931-189088E5A3A4">
+<createdBy>Lyes lyes</createdBy>
+<createdTime>2025-05-06 03:33:27 UTC</createdTime>
+<generatorID>A1145B64-D729-46EA-1935-CEC66CCC4FD3</generatorID>
+<ownerDesignName>entité-association</ownerDesignName>
+<engineerTo>
+<item key="46FDE876-F5EE-E0A2-C59D-95A0B3829E2E" value="true"/>
+</engineerTo>
+<referedAttribute>B584A303-8D34-399B-BB47-34985B2ED588</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B25FDFA0-E254-8A3A-E5EE-F9398E7DB1A6" name="article PK">
+<createdBy>Lyes lyes</createdBy>
+<createdTime>2025-05-06 03:06:39 UTC</createdTime>
+<ownerDesignName>entité-association</ownerDesignName>
+<engineerTo>
+<item key="46FDE876-F5EE-E0A2-C59D-95A0B3829E2E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3EED0746-A128-C22F-5B4B-391D369FC5E9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

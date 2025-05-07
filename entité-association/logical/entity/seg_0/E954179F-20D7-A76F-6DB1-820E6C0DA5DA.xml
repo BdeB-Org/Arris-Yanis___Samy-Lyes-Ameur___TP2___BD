@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E954179F-20D7-A76F-6DB1-820E6C0DA5DA" name="commentaire">
+<createdBy>Lyes lyes</createdBy>
+<createdTime>2025-05-06 03:09:20 UTC</createdTime>
+<ownerDesignName>entité-association</ownerDesignName>
+<engineerTo>
+<item key="46FDE876-F5EE-E0A2-C59D-95A0B3829E2E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_com" id="0389410F-4F07-443D-4673-642CC336E966">
+<createdBy>Lyes lyes</createdBy>
+<createdTime>2025-05-06 03:09:29 UTC</createdTime>
+<ownerDesignName>entité-association</ownerDesignName>
+<engineerTo>
+<item key="46FDE876-F5EE-E0A2-C59D-95A0B3829E2E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="texte" id="7C20EBF9-E6DD-08F8-4784-7185F121B842">
+<createdBy>Lyes lyes</createdBy>
+<createdTime>2025-05-06 03:09:52 UTC</createdTime>
+<ownerDesignName>entité-association</ownerDesignName>
+<engineerTo>
+<item key="46FDE876-F5EE-E0A2-C59D-95A0B3829E2E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="date_com" id="67E4DFD5-4F3B-AF95-B583-D95891E8473A">
+<createdBy>Lyes lyes</createdBy>
+<createdTime>2025-05-06 03:10:26 UTC</createdTime>
+<ownerDesignName>entité-association</ownerDesignName>
+<engineerTo>
+<item key="46FDE876-F5EE-E0A2-C59D-95A0B3829E2E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_article" id="D9383E1B-3C05-02AA-A6EE-E0B4FDA0B527">
+<createdBy>Lyes lyes</createdBy>
+<createdTime>2025-05-06 04:06:33 UTC</createdTime>
+<generatorID>C7CB35C9-FCF5-1389-D0D0-9A45458A6217</generatorID>
+<ownerDesignName>entité-association</ownerDesignName>
+<engineerTo>
+<item key="46FDE876-F5EE-E0A2-C59D-95A0B3829E2E" value="true"/>
+</engineerTo>
+<referedAttribute>3EED0746-A128-C22F-5B4B-391D369FC5E9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_user" id="0EBC9FAA-4D3E-CCA7-1F48-BF691B3A8A03">
+<createdBy>Lyes lyes</createdBy>
+<createdTime>2025-05-06 04:10:03 UTC</createdTime>
+<generatorID>51B4769D-8CE7-8E89-FBE0-D746915F8E2E</generatorID>
+<ownerDesignName>entité-association</ownerDesignName>
+<engineerTo>
+<item key="46FDE876-F5EE-E0A2-C59D-95A0B3829E2E" value="true"/>
+</engineerTo>
+<referedAttribute>60D7B017-048C-A323-A2A8-6009F988012D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0894625A-2272-B5C2-AC17-0A54EBD18DC5" name="commentaire PK">
+<createdBy>Lyes lyes</createdBy>
+<createdTime>2025-05-06 03:09:41 UTC</createdTime>
+<ownerDesignName>entité-association</ownerDesignName>
+<engineerTo>
+<item key="46FDE876-F5EE-E0A2-C59D-95A0B3829E2E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0389410F-4F07-443D-4673-642CC336E966</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
