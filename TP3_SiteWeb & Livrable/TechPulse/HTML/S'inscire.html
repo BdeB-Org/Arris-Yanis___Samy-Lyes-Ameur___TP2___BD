@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/Style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <title>S'inscrire</title>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
+        <label class="logo">
+            <a href="https://www.bdeb.qc.ca" target="_blank">
+                <img src="/IMAGES/Logo/Logo-BDEB.png" alt="Logo de BDEB" style="height: 40px; margin-top: 20px;" />
+            </a>
+        </label>
+        <ul>
+            <li><a href="/Accueil.html">Accueil</a></li>
+            <li><a href="/HTML/Àpropos.html">À propos</a></li>
+            <li><a href="/HTML/AllCatégories.html">Catégories</a></li>
+            <li><a class="active" href="/HTML/S'inscire.html">S'inscire</a></li>
+        </ul>
+    </nav>
+
+    <br><br><br><br>
+
+    <!-- Formulaire d'inscription -->
+    <div class="login-box">
+        <div class="login-header">
+            <header>Inscription</header>
+        </div>
+
+        <div class="input-box">
+            <input type="text" class="input-field" placeholder="Nom" id="nom" autocomplete="off" required />
+        </div>
+        <div class="input-box">
+            <input type="text" class="input-field" placeholder="Prénom" id="prenom" autocomplete="off" required />
+        </div>
+        <div class="input-box">
+            <input type="text" class="input-field" placeholder="Email" id="email" autocomplete="off" required />
+        </div>
+        <div class="input-box">
+            <input type="password" class="input-field" placeholder="Mot de passe" autocomplete="off" required />
+        </div>
+        <div class="input-box">
+            <input type="password" class="input-field" placeholder="Retaper le mot de passe" autocomplete="off"
+                required />
+        </div>
+
+        <div class="input-submit">
+            <button class="submit-btn" id="submit"></button>
+            <label for="submit">Valider</label>
+        </div>
+    </div>
+
+    <!-- Section masquée pour les utilisateurs ajoutés -->
+    <div class="login-box" id="section-utilisateurs" style="margin-top: 50px; display: none;">
+        <h2 class="titre-table">Liste des utilisateurs ajoutés</h2>
+        <hr style="width: 200px; border: 2px solid #4dd0e1; margin: auto; margin-top: 5px; margin-bottom: 20px;">
+        <div id="tableau-utilisateurs"></div>
+    </div>
+
+
+    <br><br><br><br>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="footerNav">
+                <ul>
+                    <li><a href="/Accueil.html">Accueil</a></li>
+                    <li><a href="/HTML/Àpropos.html">À propos</a></li>
+                    <li><a href="/HTML/Catégories.html">Catégories</a></li>
+                    <li><a href="/HTML/SeConnecter.html">Se Connecter</a></li>
+                    <li><a href="/HTML/S'inscire.html">S'inscire</a></li>
+                </ul>
+            </div>
+            <div class="footerbottom">
+                <br />
+                <p>Copyright &copy; BDEB_TEC NOV_2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script JavaScript -->
+    <script>
+        let utilisateursAjoutes = [];
+
+        document.getElementById("submit").addEventListener("click", function () {
+            let nom = document.getElementById("nom").value.trim();
+            let prenom = document.getElementById("prenom").value.trim();
+            let email = document.getElementById("email").value.trim();
+
+            if (nom && prenom && email) {
+                let utilisateur = {
+                    id: utilisateursAjoutes.length + 1,
+                    nom: nom,
+                    prenom: prenom,
+                    email: email
+                };
+
+                utilisateursAjoutes.push(utilisateur);
+                afficherUtilisateurs();
+                alert("Utilisateur ajouté !");
+            } else {
+                alert("Veuillez remplir tous les champs requis !");
+            }
+        });
+
+        function afficherUtilisateurs() {
+            document.getElementById("section-utilisateurs").style.display = "block";
+
+            let html = `
+    <table class="styled-table">
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>nom</th>
+          <th>prenom</th>
+          <th>email</th>
+        </tr>
+      </thead>
+      <tbody>
+  `;
+
+            utilisateursAjoutes.forEach(u => {
+                html += `
+      <tr>
+        <td>${u.id}</td>
+        <td>${u.nom}</td>
+        <td>${u.prenom}</td>
+        <td>${u.email}</td>
+      </tr>
+    `;
+            });
+
+            html += `
+      </tbody>
+    </table>
+  `;
+
+            document.getElementById("tableau-utilisateurs").innerHTML = html;
+        }
+
+
+    </script>
+</body>
+
+</html>

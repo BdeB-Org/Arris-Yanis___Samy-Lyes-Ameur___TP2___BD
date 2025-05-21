@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Le lien vers la page CSS -->
+    <link rel="stylesheet" href="/CSS/Style.css">
+    <!-- Lien font awesome pour les icones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- Le titre de la page -->
+    <title>Àpropos</title>
+</head>
+
+<body>
+
+    <!-- Barre de navigation en haut de la page -->
+    <nav>
+        
+        <input type="checkbox" id="check">
+        
+        <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
+        
+        <label class="logo">
+            <a href="https://www.bdeb.qc.ca" target="_blank">
+                <img src="/IMAGES/Logo/Logo-BDEB.png" alt="Logo de BDEB" style="height: 40px; margin-top: 20px;">
+            </a>
+        </label>
+        
+        <ul>
+            <li><a href="/Accueil.html">Accueil</a></li>
+            <li><a class="active" href="/HTML/Àpropos.html">À propos</a></li>
+            <li><a href="/HTML/Catégories.html">Catégories</a></li>
+            <li><a href="/HTML/S'inscire.html">S'inscire</a></li>
+        </ul>
+    </nav>
+
+    <div class="heading">
+        <h1>À propos de nous</h1>
+        <p>Chez TEC NOV, nous nous engageons à révolutionner le monde de la technologie en offrant des solutions
+            innovantes et accessibles à tous.</p>
+    </div>
+    <div class="container">
+        <section class="about">
+            <div class="about-image">
+                <img src="/IMAGES/A propos/Apropos.png" alt="image à propos">
+            </div>
+            <div class="about-content">
+                <h2>Notre histoire</h2>
+                <p>Animés par une passion pour la technologie, nous avons fondé TEC NOV avec la conviction que la
+                    technologie doit servir tout le monde. Bien que nous venions de démarrer, nous sommes déterminés à
+                    devenir rapidement un acteur clé dans le domaine des technologies de pointe.</p>
+                <a href="" class="read-more">Read more</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Section des objectifs -->
+    <div class="objectives">
+        <h2>Nos objectifs</h2>
+        <div class="objectives-list">
+            <ol class="numbered-list">
+                <li>Fournir des informations précises sur notre histoire et nos valeurs.</li>
+                <li>Établir une relation de confiance avec notre audience.</li>
+                <li>Promouvoir des pratiques durables et responsables.</li>
+                <li>Innover pour répondre aux besoins de demain.</li>
+                <li>Favoriser l'engagement de notre communauté.</li>
+                <li>Renforcer notre position de leader dans notre secteur.</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- Affichage des tables -->
+    <div class="table-section">
+        <h2>Table "Utilisateurs"</h2>
+        <div id="utilisateurs"></div>
+
+        <h2>Table "Catégories"</h2>
+        <div id="categories"></div>
+
+        <h2>Table "Articles"</h2>
+        <div id="articles"></div>
+    </div>
+
+    
+    <script src="../JS/chargerLesDonnees.js"></script>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="footerNav">
+                <ul>
+                    <li><a href="/Accueil.html">Accueil</a></li>
+                    <li><a href="/HTML/Àpropos.html">À propos</a></li>
+                    <li><a href="/HTML/Catégories.html">Catégories</a></li>
+                    <li><a href="/HTML/SeConnecter.html">Se Connecter</a></li>
+                    <li><a href="/HTML/S'inscire.html">S'inscire</a></li>
+                </ul>
+            </div>
+            <div class="footerbottom">
+                <br>
+                <p>Copyright &copy; BDEB_TEC NOV_2025</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

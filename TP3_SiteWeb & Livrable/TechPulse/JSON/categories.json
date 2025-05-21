@@ -1,0 +1,5 @@
+[
+  { "id": 1, "nom": "Innovations & Gadgets", "description": "Découverte des derniers gadgets et technologies grand public." },
+  { "id": 2, "nom": "IA & Big Data", "description": "Articles sur l’intelligence artificielle et l’analyse de données massives." },
+  { "id": 3, "nom": "Sécurité & Vie Privée", "description": "Conseils et actualités sur la cybersécurité et la protection des données" }
+]

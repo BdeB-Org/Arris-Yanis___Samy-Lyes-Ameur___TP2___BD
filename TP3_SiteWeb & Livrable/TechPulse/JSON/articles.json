@@ -1,0 +1,5 @@
+[
+  { "id": 1, "titre": "Les lunettes AR du futur", "categorie_id": 1, "date": "2025-05-01" },
+  { "id": 2, "titre": "Comment le Big Data révolutionne la santé", "categorie_id": 2, "date": "2025-05-01" },
+  { "id": 3, "titre": "Protéger vos mots de passe efficacement", "categorie_id": 3, "date": "2025-05-01" }
+]
